@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+  }
+
+  header{
+      background-image: url("../imgs/backgroundCheck.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height:600px;
+      overflow: hidden;
+  }
+
+  .search{
+    position: relative;
+    top:50%;
+    left:25%;
+}
+
+
+
+#pup{
+    position: absolute;
+    top:30%;
+    left:35%;
+    width:300px;
+    margin: auto;
+}
+
+#pup h1{
+    text-align:center;
+    color:white;
+    font-family: "roboto";
+    text-transform: capitalize;
+}
+
+ .search #search-box{
+     float:left;
+     text-align:center;
+     outline:none;
+     border:2px solid #017700;
+     border-radius:20px;
+     width:300px;
+     padding:8px;
+ }
+
+
+  .page {
+    height: 100vh;
+  }
+
+  .page>section{
+      margin-top:150px;
+  }
+
+  .page::before {
+    content: "";
+    position: fixed;
+    width: 300%;
+    height: 100%;
+    background-color:blue;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes waving {
+    from {
+      transform: translateX(-50%) skew(0, -10deg);
+    }
+    to {
+      transform: translateX(-30%) skew(10deg, 0);
+    }
+  }
+
+.suggestions{
+   width:100%;
+   height:400px;
+   margin-top:40px;
+}
+
+.suggestions h2{
+    text-align:center;
+    text-transform: capitalize;
+}
+
+.suggestions .books{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+    transition:1s;
+}
+
+.suggestions .books div img:hover{
+    box-shadow: 0 0 10px;
+    transition:1s;
+}
+
+.books h3{
+    text-transform:uppercase;
+}
+
+.books .auteur{
+  color:gold;
+}
+
+.books .price{
+  color:rgb(252, 79, 79);
+}
+
+.services{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(2rem,1fr));
+  gap:1.5rem;
+}
+
+.services div{
+  display: flex;
+  justify-content: center;
+
+}
+
+.services div img{
+    font-size: 3.5rem;
+    width:50px;
+    height:50px;
+    color:green;
+}
+
+.show{
+  background-image: url("../icons/books.png");
+  background-position: right center;
+}

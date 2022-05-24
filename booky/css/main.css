@@ -1,0 +1,128 @@
+
+.search-box{
+    width:100%;
+    height:60px;
+    background:none;
+    display: flex;
+    justify-content: center;
+}
+.search-box input{
+    background:none;
+    color:white;
+    border-radius:20px;
+    margin:12px;
+    text-align:center;
+    padding:4px;
+    outline: none;
+    text-transform: capitalize;
+}
+.search-box input:hover{
+    background-color:white;
+    color:black;
+    width:300px;
+    border:2px green solid;
+    transition: 2s;
+}
+input::placeholder{
+    color:black;
+}
+.search-box form #submit{
+    text-transform:capitalize;
+    width:100px;
+    padding:10px;
+    color:white;
+    outline: none;
+    border:1px solid white;
+    border-radius: 20px;
+  background-color:green;
+}
+
+.container div{
+    margin:20px;
+}
+
+.traiding, .stories{
+    width:100%;
+    height:600px;
+    background-color:rgb(216, 213, 213);
+    margin:auto;
+}
+
+.container h1{
+    text-align: center;
+    background-color:green;
+    color:white;
+    width:400px;
+    border-radius:10px;
+    margin:auto;
+    font-family:"roboto";
+    font-size: 30px;
+}
+
+#traiding-container, #stories-container,#science-container,#programming-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#traiding-container>div{
+    margin:40px;
+}
+.container img{
+    width: 182px;
+    height:278px;
+    transition: 1s;
+}
+
+.container img:hover {
+    box-shadow:0 0 10px black;
+    transition: 1s;
+}
+
+.container div input{
+    outline: none;
+    background-color: rgb(3, 143, 58);
+    width:100px;
+    padding:10px;
+    color:white;
+    outline: none;
+    border:1px solid white;
+    border-radius: 20px;
+}
+
+.container div input:hover{
+    background-color:red;
+}
+
+.stories{
+    background-image: url("../imgs/Storries.jpg");
+}
+
+.science{
+    background-image: url("../imgs/sciencebg.jpg");
+}
+.programming{
+    background-image:url("../imgs/programming-bg.jpg");
+}
+
+.science, .stories,.programming{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+.rating{
+    display: inline-block;
+    margin:0;
+    padding:0;
+}
+
+.ratings img{
+    width: 20px;
+    height:20px;
+
+}
+
+

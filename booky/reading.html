@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>reading</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <meta charset="utf-8">
+        <style>
+             embed{
+                width:100%;
+                height:100vh;
+                display: none;
+            }
+            header{
+                display: none;
+            }
+        </style>
+    </head>
+
+    
+    <body onload="Reader()">
+        <section class="load">
+            <img src="icons/book.gif" alt="">
+        </section>
+        <header>
+            <nav>
+                <img src="icons/logo2.jpg" alt="">
+                <a href="selling.html"><h1 id="logo">Booksy</h1></a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sign.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+         <embed id="reader" src="" type="">
+        </section>
+
+        <script>
+            var load=document.getElementsByClassName("load");
+            var header=document.getElementsByTagName("header");
+            var em=document.getElementById("reader");
+            var timer=setTimeout(faded,5000);
+            function Reader(){
+                var em=document.getElementById("reader");
+                em.src="automate.pdf";
+            }
+            function faded(){
+                load[0].style.display="none";
+                em.style.display="block";
+                header[0].style.display="block";
+            }
+        </script>
+         <script src="js/main.js"></script>
+    </body>
+</html>
